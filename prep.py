@@ -1,3 +1,5 @@
+#Implementing the linked list class 
+
 class Node:
 	def __init__(self, x): #x is the value of the node
 		self.value = x
@@ -24,7 +26,7 @@ class Node:
 # node1.append(node3)
 # print node1
 
-##Solution
+#Solution for removing duplicates from an unsorted linked list
 
 def remove_duplicates(linked_list): #linked_list is a Node
 	hash_table = {}
