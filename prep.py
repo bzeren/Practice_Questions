@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+#Implementing the linked list class 
+>>>>>>> e5419dc759907926f518688a3a43f51ab8146817
 
 class Node:
 
@@ -30,7 +34,7 @@ class Node:
 # node1.append(node3)
 # print node1
 
-##Solution
+#Solution for removing duplicates from an unsorted linked list
 
 def remove_duplicates(linked_list):  # linked_list is a Node
     hash_table = {}
