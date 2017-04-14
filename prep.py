@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 #Implementing the linked list class 
->>>>>>> e5419dc759907926f518688a3a43f51ab8146817
 
 class Node:
 
