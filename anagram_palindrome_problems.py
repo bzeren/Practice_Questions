@@ -1,3 +1,7 @@
+##Q1: List the strings that are anagrams from a set of strings (ayni harflerden olusan farkli kelime) 
+##Q2: Find the longest palindrome of a string (tersten okundugunda ayni olan kelime)
+
+
 def isWord(s):
 #    print "isWord("+s+")"
     words = ["sword", "word", "words" , "board", "door", "key", "keyboard"] #sorted for convenience
@@ -87,6 +91,9 @@ def isPalindrome(s):
             return False
         i+= 1
     return True
+
+def isPalindromeOneLine(s):
+    return s.lower() == s.lower()[::-1]
           
 
 ######### TESTS ########
@@ -100,9 +107,11 @@ nonpals_expected = ['', 'anna', '', 'reviver', 'rotator', 'rotator', 'annahannah
 def isPalindromeTest():
     for pal in pals:
         assert isPalindrome(pal), "Incorrect -- %r is NOT a palindrome!" % (pal)
+        assert isPalindromeOneLine(pal), "Incorrect -- %r is NOT a palindrome!" % (pal)
     
     for nonpal in nonpals:
         assert isPalindrome(nonpal) == False, "Incorrect -- %r actually is a palindrome." % (nonpal)
+        assert isPalindromeOneLine(nonpal) == False, "Incorrect -- %r actually is a palindrome." % (nonpal)
     
     print "All tests passed for isPalindrome()"
 
@@ -122,4 +131,5 @@ longestPalindromeTest()
 
 
 wo = set(["owrosd"])
+generateAnagrams(wo)
 print ans
